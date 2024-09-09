@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #eee;
+}
+
+.game-status {
+    margin-top: 20px;
+}
+
+#turn {
+    font-size: 18px;
+}
+
+#winner {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 600px) {
+    .game-board {
+        flex-direction: row;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .cell {
+        width: 30px;
+        height: 30px;
+    }
+}
